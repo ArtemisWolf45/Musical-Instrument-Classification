@@ -200,7 +200,7 @@ def process_split(split):
 def main():
     os.makedirs(OUTPUT_PATH, exist_ok=True)
 
-    for split in ["train", "valid"]:
+    for split in ["train", "valid", "test"]:
         process_split(split)
 
     np.save(
