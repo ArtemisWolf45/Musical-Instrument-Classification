@@ -1,0 +1,45 @@
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# IDE and editor files
+.vscode/
+.idea/
+
+# Jupyter files
+.ipynb_checkpoints/
+
+# Raw NSynth dataset
+NSynth/
+nsynth/
+raw_data/
+raw_dataset/
+datasets/
+Dataset/
+
+# Processed arrays (can be regenerated)
+processed_data/
+
+# Downloaded dataset archives
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+
+# Temporary files
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Temporary model checkpoints
+*.weights.h5
+
+desktop.ini
