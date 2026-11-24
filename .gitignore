@@ -1,3 +1,6 @@
+# Exclude large processed training and validation datasets
+processed_data/train/
+processed_data/valid/
 
 # Python cache files
 __pycache__/
@@ -23,9 +26,6 @@ raw_data/
 raw_dataset/
 datasets/
 Dataset/
-
-# Processed arrays (can be regenerated)
-processed_data/
 
 # Downloaded dataset archives
 *.tar
