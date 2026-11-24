@@ -1,0 +1,5 @@
+Final Model Evaluation
+======================
+Test Loss: 0.7355
+Test Accuracy: 0.8000
+Test Samples: 600
