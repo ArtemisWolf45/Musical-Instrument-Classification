@@ -3,7 +3,6 @@ import librosa
 import keras
 
 from pathlib import Path
-from cnn_model import SpecAugment
 
 #Configuration
 BASE_DIR = Path(__file__).resolve().parent
@@ -24,7 +23,6 @@ print("Loading model...")
 
 model = keras.models.load_model(
     MODEL_PATH,
-    custom_objects={"SpecAugment":SpecAugment},
     compile=False
 )
 
@@ -65,7 +63,7 @@ def preprocess_audio(audio_path):
 
     return mel_db
 
-# 4. Predict the instrument
+#Predict the instrument
 def predict_instrument(audio_path):
 
     spectrogram = preprocess_audio(audio_path)
@@ -87,7 +85,6 @@ def predict_instrument(audio_path):
         )
 
 if __name__ == "__main__":
-
     audio_path = input(
         "Enter the path of a WAV audio file: "
     ).strip().strip('"')
